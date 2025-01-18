@@ -130,10 +130,10 @@ end
 
 
 local function validate_data(data, key)
-    assert((type(data) == "string" or "table"), "Data must be a string or a byte table")
+    assert((type(data) == "string" or "table"), "Data must be a string or a byte array")
     assert(((type(data) == "table" and #data == 16) or (data:len() == 16)), "Data length must be 16 bytes")
 
-    assert((type(key) == "string" or "table"), "Key must be a string or a byte table")
+    assert((type(key) == "string" or "table"), "Key must be a string or a byte array")
     assert(((type(key) == "table" and #key == 16) or (key:len() == 16)), "Key length must be 16 bytes")
 end
 
