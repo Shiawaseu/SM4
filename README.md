@@ -25,14 +25,14 @@ print('Decrypted Text:', dec.toString())
 ### Input and Output Types
 
 - **Input Types:**
-  - Your Input & Key can be either a string or a byte table.
+  - Your Input & Key can be either a string or a byte array.
   - Both inputs must have a value of **16 bytes**
     - To cipher larger data, use a [Block Cipher Mode of Operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation) to process data in chunks of 16 bytes. As this implementation focuses on single block encryption/decryption
 
 - **Output Types:**
   - The `encrypt` and `decrypt` functions return a table with:
-    - `value`: The encrypted or decrypted byte table.
-    - `toString()`: A method to get the string representation of the byte table.
+    - `value`: The encrypted or decrypted byte array.
+    - `toString()`: A method to get the string representation of the byte array.
 
 ## License
 
